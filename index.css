@@ -1,0 +1,195 @@
+.red{
+    background-color: lightcoral;
+}
+.hand{
+    cursor: pointer;
+}
+.size{
+    width : 72px;
+    height: 72px;
+}
+/* Apply to whole page */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #d9afd9, #97d9e1); /* Gradient background */
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+}
+
+/* Container for the whole form */
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Center the heading */
+#todo-form h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4a148c;
+}
+
+/* Style each form field */
+#todo-form div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input, textarea and labels styling */
+#todo-form input,
+#todo-form textarea {
+  padding: 12px 15px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#todo-form input:focus,
+#todo-form textarea:focus {
+  border-color: #7e57c2;
+  box-shadow: 0 0 5px rgba(126, 87, 194, 0.5);
+}
+
+#todo-form label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+/* Buttons styling */
+#operations {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#operations button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #7e57c2;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#operations button:hover {
+  background-color: #5e35b1;
+}
+
+/* Table styling */
+#records table {
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#records th,
+#records td {
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#records th {
+  background-color: #9575cd;
+  color: white;
+}
+
+#records tr:hover {
+  background-color: #f3e5f5;
+}
+#operations {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.fa-solid {
+  margin-right: 12px; /* Add space between icons */
+  cursor: pointer;
+  font-size: 18px;
+  color: #6a1b9a;
+  transition: transform 0.2s ease;
+}
+
+.fa-solid:hover {
+  transform: scale(1.2);
+  color: #ab47bc;
+}
+/* 🌐 Responsive Design: Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    border-radius: 15px;
+    width: 95%;
+  }
+
+  #todo-form input,
+  #todo-form textarea {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  #operations {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #operations button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  #records table {
+    font-size: 14px;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+
+  #records th,
+  #records td {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #todo-form h1 {
+    font-size: 22px;
+  }
+
+  #operations button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  #records th,
+  #records td {
+    font-size: 12px;
+  }
+}
+
+
+
+

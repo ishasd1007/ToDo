@@ -2,9 +2,11 @@
 import { validateName } from "./validation.js"; 
 import todoOperations from "./service.js";
 import { init } from "./util.js";
+console.log("controller.js loaded");
 window.addEventListener('load', initialize);
 let autoId ; 
 function initialize(){
+     console.log(" initialize called");
     bindEvents();
     autoId = init();
     showId();
@@ -14,6 +16,7 @@ function initialize(){
 
 
 function bindEvents(){
+     console.log("📌 bindEvents called");
 document.getElementById('add').addEventListener('click', addTask);
 document.querySelector('#delete').addEventListener('click', deleteForEver);
 document.querySelector('#Save').addEventListener('click',Save);
@@ -112,6 +115,8 @@ function addTask(){
         computeTotal();
         showId();
         clearFields();
+        console.log("✅ addTask clicked");
+        
     }
 
     //console.log('Task is ', task);
